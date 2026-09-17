@@ -13,12 +13,14 @@ PC installed with SCILAB.
 import speech_recognition as sr
 
 # Path to your audio file
+
 audio_file_path = '/content/shivani.wav'  # Change this to your file name if different
 
 r = sr.Recognizer()
 
 # Load the audio file
 with sr.AudioFile(audio_file_path) as source:
+
     print("Reading audio file...")
     audio = r.record(source)  # read the entire audio file
 
